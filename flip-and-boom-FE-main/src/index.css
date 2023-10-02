@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.custom-cursor {
+  cursor: url("/assets/flipnboom.svg"), auto;
+}
+
+.embla {
+  overflow: hidden;
+}
+.embla__container {
+  display: flex;
+}
+.embla__slide {
+  flex: 0 0 100%;
+  min-width: 0;
+}
+.embla__slide {
+  width: 100%;
+}
+
+.continuous-slide {
+  animation: slide-continuous 15s linear infinite;
+  display: inline-block;
+  white-space: nowrap;
+}
+
+@keyframes slide-continuous {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
